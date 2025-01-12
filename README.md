@@ -1,3 +1,7 @@
+## Modified to work with LM Studio on Windows using python 3.10 by angrysky56 if missing deps just pip install the missing ones.
+
+python gpt3_baseline.py --api_key "not-needed" --model_name "nemomix-unleashed-12b" --dataset_name "LogicalDeduction" --split dev --mode "CoT" --max_completion_tokens 1024 --temperature 0.7
+
 # Logic-LM
 Data and Codes for ["LOGIC-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning"](https://arxiv.org/abs/2305.12295) (Findings of EMNLP 2023). 
 
