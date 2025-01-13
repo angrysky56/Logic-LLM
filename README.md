@@ -1,7 +1,7 @@
 # Enhanced Logic-LLM with Local Models
 
 # altered by angrysky56 to run on Windows using LM Studio with python=3.10, if missing deps just pip install them.
-bash```
+```bash
 cd ./reasoning_enhanced
 python lmstudio_baseline.py --data_path "F:/GithubRepos/repo-development/Logic-LLM/data" --save_path "F:/GithubRepos/repo-development/Logic-LLM/reasoning_enhanced/results"
 ```
