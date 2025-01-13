@@ -1,12 +1,10 @@
-## Modified to work with LM Studio on Windows using python 3.10 by angrysky56 if missing deps just pip install the missing ones.
- 
-```
-cd ./reasoning_enhanced
-python lmstudio_baseline.py --data_path "F:/GithubRepos/repo-development/Logic-LLM/data" --save_path "F:/GithubRepos/repo-development/Logic-LLM/
-reasoning_enhanced/results"
-```
----
+# Enhanced Logic-LLM with Local Models
 
+# altered by angrysky56 to run on Windows using LM Studio with python=3.10, if missing deps just pip install them.
+bash```
+cd ./reasoning_enhanced
+python lmstudio_baseline.py --data_path "F:/GithubRepos/repo-development/Logic-LLM/data" --save_path "F:/GithubRepos/repo-development/Logic-LLM/reasoning_enhanced/results"
+```
 I think the error below was maybe because it didn't choose, could be a code issue but otherwise it was all checking properly.
 
 Processing example 10/300 - ID: logical_deduction_9
@@ -22,11 +20,115 @@ Reasoning steps:
 - The ...
 3. Deduction: Given that the purple book is to the left of the black book, and the black book is the third from th...
 4. Conclusion: Therefore, the only option that could potentially be true is A) The brown book is the second from th...
-This repository extends the original Logic-LLM framework to work with local LLM models while incorporating advanced AI reasoning strategies. Our goal is to 
-maintain the original system's logical deduction capabilities while adding more sophisticated reasoning approaches.
+This repository extends the original Logic-LLM framework to work with local LLM models while incorporating advanced AI reasoning strategies. Our goal is to maintain the original system's logical deduction capabilities while adding more sophisticated reasoning approaches.
 
 ![image](https://github.com/user-attachments/assets/8444913b-2111-400a-a95e-3e93977c601e)
 
+## 1. Current Working System
+
+### Core Functionality
+- **Model**: nemomix-unleashed-12b via LM Studio
+- **Performance**:
+  - Processing speed: ~15-20 seconds per example
+  - Current accuracy: ~60% on LogicalDeduction dev set
+  - Memory usage: ~12GB VRAM
+  - Batch size: 1 (optimized for stability)
+
+### System Components
+1. **Modified Utils Layer** (`utils.py`):
+   - LM Studio integration (localhost:1234/v1)
+   - Single example processing
+   - Error handling and recovery
+   - Progressive result saving
+
+2. **Baseline Runner** (`gpt3_baseline.py`):
+   - Chain-of-thought prompting
+   - Logical deduction task handling
+   - Result validation and storage
+   - Progress tracking
+
+3. **Results Management**:
+   - Continuous saving (`_intermediate.json`)
+   - Human-readable format
+   - Answer validation
+   - Error logging
+
+### Current Command Set
+```bash
+# Basic run
+python gpt3_baseline.py \
+    --api_key "not-needed" \
+    --model_name "nemomix-unleashed-12b" \
+    --dataset_name "LogicalDeduction" \
+    --split dev \
+    --mode "CoT" \
+    --max_completion_tokens 1024 \
+    --temperature 0.7
+
+# Monitor results
+tail -f ./baselines/results/CoT_LogicalDeduction_dev_nemomix-unleashed-12b_intermediate.json
+```
+
+## 2. Next Development Steps
+
+### Immediate Tasks (Phase 1)
+1. **Enhanced Reasoning Pipeline** (In Progress)
+   - [ ] Create `reasoning_enhanced/base_validator.py`
+     - Implement basic reasoning validation
+     - Add step-by-step verification
+     - Track logical consistency
+   
+   - [ ] Develop `reasoning_enhanced/multi_path.py`
+     - Support multiple reasoning approaches
+     - Implement confidence scoring
+     - Add cross-validation
+
+2. **Self-Reflection System** (Next Up)
+   - [ ] Build `self_reflection/monitor.py`
+     - Track reasoning patterns
+     - Detect common failures
+     - Log decision points
+
+   - [ ] Create `self_reflection/validator.py`
+     - Implement chain-of-thought validation
+     - Add reasoning checkpoints
+     - Build self-critique logic
+
+### Near-Term Goals (Phase 2)
+1. **Performance Enhancement**
+   - [ ] Update prompt templates for better reasoning
+   - [ ] Implement answer validation pipeline
+   - [ ] Add detailed logging system
+   - [ ] Create performance visualization tools
+
+2. **Evaluation System**
+   - [ ] Build comprehensive testing framework
+   - [ ] Add automated error analysis
+   - [ ] Create performance comparison tools
+   - [ ] Implement continuous monitoring
+
+### Directory Structure Update
+```plaintext
+Logic-LLM/
+├── baselines/                      # Current working system
+│   ├── gpt3_baseline.py
+│   ├── utils.py
+│   ├── evaluation.py
+│   └── results/
+├── reasoning_enhanced/             # New development
+│   ├── base_validator.py
+│   ├── multi_path.py
+│   └── tests/
+├── self_reflection/               # Next phase
+│   ├── monitor.py
+│   ├── validator.py
+│   └── tests/
+└── evaluation/                    # Analysis tools
+    ├── metrics/
+    └── visualization/
+```
+
+[Original README below]
 
 # Logic-LM
 Data and Codes for ["LOGIC-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning"](https://arxiv.org/abs/2305.12295) (Findings of EMNLP 2023). 
