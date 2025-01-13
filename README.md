@@ -1,7 +1,5 @@
 ## Modified to work with LM Studio on Windows using python 3.10 by angrysky56 if missing deps just pip install the missing ones.
 
-# altered by angrysky56 to run on Windows using LM Studio with python=3.10, if missing deps just pip install them.
-
 bash 
 ```
 cd ./reasoning_enhanced
