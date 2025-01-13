@@ -18,7 +18,7 @@ class SelfRefinementEngine:
         self.model_name = args.model_name
         self.dataset_name = args.dataset_name
         self.backup_strategy = args.backup_strategy
-        self.openai_api = OpenAIModel(args.api_key, 'gpt-4', args.stop_words, args.max_new_tokens)
+        self.openai_api = OpenAIModel(args.api_key, 'gpt-4', args.stop_words, args.max_completion_tokens)
         self.current_round = current_round
 
         self.logic_programs = self.load_logic_programs()
@@ -130,7 +130,7 @@ def parse_args():
     parser.add_argument('--timeout', type=int, default=60)
     parser.add_argument('--api_key', type=str)
     parser.add_argument('--stop_words', type=str, default='------')
-    parser.add_argument('--max_new_tokens', type=int, default=1024)
+    parser.add_argument('--max_completion_tokens', type=int, default=1024)
     args = parser.parse_args()
     return args
 

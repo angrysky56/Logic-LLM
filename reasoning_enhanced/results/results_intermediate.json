@@ -1,0 +1,570 @@
+{
+  "results": [
+    {
+      "id": "logical_deduction_0",
+      "answer": "D",
+      "predicted_answer": "E",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The books on the shelf are: green, blue, white, purple, and yellow."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given statements, we know that:\n- The blue book is to the right of the yellow book.\n- The white book is to the left of the yellow book.\n- The blue book is the second from the right.\n- The purple book is the second from the left."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "Given that the blue book is the second from the right, and it's to the right of the yellow book, we can deduce that:\n- The yellow book must be the third from the right.\n- Since the purple book is the second from the left, and it's to the left of the white book, we can deduce that:\n  - The white book must be the third from the left."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Based on the deductions made in step 3, we can conclude that the yellow book is the second from the right and the purple book is the second from the left. Therefore, option E) The yellow book is the second from the left must be true."
+        }
+      ],
+      "confidence": "high",
+      "correct": false,
+      "time_taken": 96.95185160636902
+    },
+    {
+      "id": "logical_deduction_1",
+      "answer": "A",
+      "predicted_answer": "A",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The tractor is newer than the minivan. The tractor is older than the limousine. The convertible is older than the sedan. The convertible is the second-newest."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given facts, we know that the convertible is the second-newest vehicle. This eliminates options B, C, D and E."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "Since option A states 'The convertible is the second-newest', which matches our analysis from step 2, we can conclude that this statement must be true."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Therefore, the correct answer is A: The convertible is the second-newest."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 69.18460464477539
+    },
+    {
+      "id": "logical_deduction_2",
+      "answer": "E",
+      "predicted_answer": "E",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": [
+            "The tractor is newer than the motorcycle.",
+            "The motorcycle is newer than the sedan.",
+            "The limousine is the oldest.",
+            "The station wagon is the newest."
+          ]
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given facts, we can deduce the following order of vehicles from oldest to newest: limousine < sedan < motorcycle < tractor < station wagon."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "The limousine is explicitly stated as the oldest vehicle. None of the other options contradict this fact."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Therefore, option E) The limousine is the oldest must be correct."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 66.44788646697998
+    },
+    {
+      "id": "logical_deduction_3",
+      "answer": "A",
+      "predicted_answer": "A",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": [
+            "The fruit stand sells five fruits: watermelons, plums, apples, peaches, and kiwis.",
+            "The apples are less expensive than the peaches.",
+            "The plums are the cheapest.",
+            "The kiwis are the second-cheapest.",
+            "The watermelons are more expensive than the peaches."
+          ]
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": [
+            "From the given facts, we can establish a price order for some of the fruits:",
+            "- Plums are the cheapest.",
+            "- Kiwis are the second-cheapest.",
+            "- Apples are less expensive than peaches.",
+            "- Watermelons are more expensive than peaches."
+          ]
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": [
+            "Since watermelons are more expensive than peaches, and we know that apples are cheaper than peaches, it follows that:",
+            "- Watermelons must be the most expensive.",
+            "- Apples must be less expensive than watermelons but more expensive than plums and kiwis."
+          ]
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Therefore, the correct answer is A) The watermelons are the most expensive."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 100.08687448501587
+    },
+    {
+      "id": "logical_deduction_4",
+      "answer": "E",
+      "predicted_answer": "E",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The birds are arranged in order: cardinal, crow, falcon, robin, and blue jay."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given information, we know that the blue jay is second from the left. This means the bird to its right (third from the left) must be the cardinal, as it's stated that the cardinal is to the right of the blue jay."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "Since the robin is to the right of the cardinal and the crow is the rightmost bird, we can deduce the order: blue jay, cardinal, robin, falcon, crow."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Therefore, option E) The blue jay is the second from the left must be correct."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 74.97389721870422
+    },
+    {
+      "id": "logical_deduction_5",
+      "answer": "A",
+      "predicted_answer": "A",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The sedan is newer than the station wagon. The limousine is the newest. The bus is the second-newest."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From these facts, we can deduce that the order of vehicles from newest to oldest is: limousine, bus, sedan, station wagon."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "The convertible is mentioned as being the second-oldest in the given context. This matches with our deduced order."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 52.01974177360535
+    },
+    {
+      "id": "logical_deduction_6",
+      "answer": "E",
+      "predicted_answer": "E",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The birds are arranged in order: crow, robin, quail, blue jay, falcon."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given information, we know that the falcon is the third bird from the left. This means it cannot be any of the other options (A, B, C, or D)."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "Since the falcon is the third from the left and none of the other options can be correct based on the information provided, we can conclude that E) The falcon is the third from the left must be true."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "The answer is E: The falcon is the third from the left."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 71.27065420150757
+    },
+    {
+      "id": "logical_deduction_7",
+      "answer": "D",
+      "predicted_answer": null,
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The cardinal is the leftmost bird."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "Since the raven is to the right of the blue jay, and the robin is to the right of the raven, we can deduce that the order from left to right is: cardinal, blue jay, raven, robin."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "The quail's position cannot be determined with certainty based on the given information. However, we know that it must be either to the left of the cardinal or to its right."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "None of the options A-E can be definitively confirmed as true based on the provided information. The quail's position is unknown, and while we know the order of the other birds, none of them are specifically stated to be second from the left."
+        }
+      ],
+      "confidence": "low",
+      "correct": false,
+      "time_taken": 77.79527831077576
+    },
+    {
+      "id": "logical_deduction_8",
+      "answer": "E",
+      "predicted_answer": "E",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": [
+            "The owl is the second from the right.",
+            "The robin is the second from the left.",
+            "The robin is to the right of the blue jay.",
+            "The hummingbird is to the right of the hawk."
+          ]
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": [
+            "From the first fact, we know that the owl cannot be the leftmost bird.",
+            "From the second fact, we know that the robin is not the rightmost bird.",
+            "The third and fourth facts help us establish the relative positions of the birds."
+          ]
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": [
+            "Given that the owl is second from the right, it must be to the left of the hawk.",
+            "Since the robin is to the right of the blue jay and second from the left, the blue jay must be third from the left.",
+            "The hummingbird being to the right of the hawk means that the hawk cannot be the rightmost bird."
+          ]
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": [
+            "Based on the established positions, we can deduce that the hummingbird must be the rightmost bird.",
+            "Therefore, option E) The hummingbird is the rightmost. is true."
+          ]
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 104.12369012832642
+    },
+    {
+      "id": "logical_deduction_9",
+      "answer": "A",
+      "predicted_answer": null,
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The books are arranged in a fixed order: brown, orange, red, purple, and black."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given information, we know that:\n- The purple book is to the left of the black book.\n- The red book is to the right of the brown book.\n- The orange book is the second from the left.\n- The black book is the third from the left."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "Given that the purple book is to the left of the black book, and the black book is the third from the left, the purple book must be the second from the left. Since the orange book is already the second from the left, the purple book cannot be the second from the right.\n\nThe red book is to the right of the brown book, so it cannot be the second from the right either.\n\nThe black book is the third from the left, so it also cannot be the second from the right."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Therefore, the only option that could potentially be true is A) The brown book is the second from the right. However, we don't have enough information to confirm this definitively.\n\nThe correct answer cannot be determined with certainty based on the given information."
+        }
+      ],
+      "confidence": "low",
+      "correct": false,
+      "time_taken": 106.38946199417114
+    },
+    {
+      "id": "logical_deduction_10",
+      "answer": "B",
+      "predicted_answer": "B",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The birds are arranged in order: owl, robin, blue jay, hawk, hummingbird."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given information, we know that the owl is second from the right and the robin is second from the left. This means they are not next to each other."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "Since the robin is to the right of the blue jay, we can deduce that the order must be: owl, hawk, hummingbird, blue jay, robin. The only option that matches this arrangement is B) The robin is the second from the left."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Therefore, the correct answer is B) The robin is the second from the left."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 75.51448345184326
+    },
+    {
+      "id": "logical_deduction_11",
+      "answer": "E",
+      "predicted_answer": "D",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": [
+            "The bus is newer than the truck.",
+            "The truck is newer than the convertible.",
+            "The sedan is the second-oldest.",
+            "The motorcyle is newer than the bus."
+          ]
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": [
+            "From the first two facts, we can deduce that the order from newest to oldest is: motorcycle, bus, truck, convertible.",
+            "The sedan is the second-oldest, so it comes after the convertible in the order."
+          ]
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": [
+            "Given that the sedan is the second-oldest and comes after the convertible, the full order from newest to oldest is: motorcycle, bus, truck, convertible, sedan.",
+            "Therefore, the sedan is the newest."
+          ]
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "The correct answer is D) The sedan is the newest."
+        }
+      ],
+      "confidence": "high",
+      "correct": false,
+      "time_taken": 79.81837058067322
+    },
+    {
+      "id": "logical_deduction_12",
+      "answer": "E",
+      "predicted_answer": "D",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": [
+            "There were five golfers: Eve, Rob, Ana, Eli, and Mya.",
+            "Eli finished below Mya.",
+            "Eve finished first.",
+            "Ana finished below Eli.",
+            "Rob finished second."
+          ]
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": [
+            "From the facts, we know that Eve is in first place and Rob is in second place. This leaves three positions for Ana, Eli, and Mya.",
+            "Ana finished below Eli, so Ana must be in fourth or fifth place.",
+            "Eli finished below Mya, but since there are only two spots left (third and fifth), Eli must be in third place and Mya in fifth."
+          ]
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": [
+            "Based on the analysis, we can deduce that Ana finished fourth and Eli finished third.",
+            "None of the options match this deduction."
+          ]
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "The correct answer is D) Eli finished third."
+        }
+      ],
+      "confidence": "high",
+      "correct": false,
+      "time_taken": 86.02255868911743
+    },
+    {
+      "id": "logical_deduction_13",
+      "answer": "D",
+      "predicted_answer": "D",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The fruits at the stand are: apples, mangoes, oranges, plums, and pears."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "Oranges > Mangoes (more expensive)\nPlums < All others (cheapest)\nApples < Mangoes\nPears > Oranges"
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "From the analysis, we can deduce that:\n- Apples are cheaper than mangoes but more expensive than plums.\n- Pears are more expensive than oranges and apples."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "The only fact that is definitely true is that the plums are the cheapest. Therefore, the correct answer is D) The plums are the cheapest."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 73.53429627418518
+    },
+    {
+      "id": "logical_deduction_14",
+      "answer": "D",
+      "predicted_answer": "D",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The kiwis are less expensive than the plums. The pears are the third-most expensive. The kiwis are the second-cheapest."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given facts, we know that the order of prices from cheapest to most expensive is: kiwis (second-cheapest), pears (third-most expensive), and then plums. The watermelons are the most expensive."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "Since the mangoes are not mentioned in any of the given facts, we cannot determine their exact position in the price order. However, we know that they must be more expensive than the kiwis and cheaper than the watermelons."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Based on the information provided, we can conclude that D) The pears are the third-most expensive is the correct answer. This matches with the given facts about the order of prices."
+        }
+      ],
+      "confidence": "high",
+      "correct": true,
+      "time_taken": 83.29910826683044
+    },
+    {
+      "id": "logical_deduction_15",
+      "answer": "C",
+      "predicted_answer": "None of the above (A-E)",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The books are arranged in a fixed order: green, orange, gray, yellow, and purple. The green book is rightmost."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "From the given information, we can deduce that the arrangement from left to right is: purple, gray, orange, yellow, green."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "None of the books are second from the left in this arrangement. The purple book is first, followed by the gray book, then the orange book, and so on."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "Therefore, none of the options A-E are true. The correct answer is that no book is second from the left in this arrangement."
+        }
+      ],
+      "confidence": "high",
+      "correct": false,
+      "time_taken": 71.82269620895386
+    },
+    {
+      "id": "logical_deduction_16",
+      "answer": "D",
+      "predicted_answer": "A",
+      "reasoning_steps": [
+        {
+          "step": 1,
+          "type": "facts",
+          "content": "The oranges are the most expensive."
+        },
+        {
+          "step": 2,
+          "type": "analysis",
+          "content": "Since the plums are less expensive than the kiwis, and the loquats are more expensive than the kiwis, we can deduce that the order from most to least expensive is: oranges > plums > loquats > kiwis."
+        },
+        {
+          "step": 3,
+          "type": "deduction",
+          "content": "The watermelons are less expensive than the plums (given in the problem). Therefore, the order from most to least expensive is: oranges > plums > loquats > kiwis > watermelons."
+        },
+        {
+          "step": 4,
+          "type": "conclusion",
+          "content": "The second-cheapest fruit is the watermelon. Therefore, the correct answer is A) The watermelons are the second-cheapest."
+        }
+      ],
+      "confidence": "high",
+      "correct": false,
+      "time_taken": 74.66722869873047
+    }
+  ]
+}
