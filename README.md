@@ -1,6 +1,13 @@
 ## Modified to work with LM Studio on Windows using python 3.10 by angrysky56 if missing deps just pip install the missing ones.
 
-python lmstudio_baseline.py --data_path "F:/GithubRepos/repo-development/Logic-LLM/data" --save_path "F:/GithubRepos/repo-development/Logic-LLM/reasoning_enhanced/results"
+# altered by angrysky56 to run on Windows using LM Studio with python=3.10, if missing deps just pip install them.
+
+bash ```
+cd ./reasoning_enhanced
+python lmstudio_baseline.py --data_path "F:/GithubRepos/repo-development/Logic-LLM/data" --save_path "F:/GithubRepos/repo-development/Logic-LLM/
+reasoning_enhanced/results"
+
+I think the error below was maybe because it didn't choose, could be a code issue but otherwise it was all checking properly.
 
 Processing example 10/300 - ID: logical_deduction_9
 Generating response (this may take a while)...
@@ -15,6 +22,11 @@ Reasoning steps:
 - The ...
 3. Deduction: Given that the purple book is to the left of the black book, and the black book is the third from th...
 4. Conclusion: Therefore, the only option that could potentially be true is A) The brown book is the second from th...
+This repository extends the original Logic-LLM framework to work with local LLM models while incorporating advanced AI reasoning strategies. Our goal is to 
+maintain the original system's logical deduction capabilities while adding more sophisticated reasoning approaches.
+
+![image](https://github.com/user-attachments/assets/8444913b-2111-400a-a95e-3e93977c601e)
+
 
 # Logic-LM
 Data and Codes for ["LOGIC-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning"](https://arxiv.org/abs/2305.12295) (Findings of EMNLP 2023). 
