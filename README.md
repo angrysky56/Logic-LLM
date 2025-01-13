@@ -1,6 +1,20 @@
 ## Modified to work with LM Studio on Windows using python 3.10 by angrysky56 if missing deps just pip install the missing ones.
 
-python gpt3_baseline.py --api_key "not-needed" --model_name "nemomix-unleashed-12b" --dataset_name "LogicalDeduction" --split dev --mode "CoT" --max_completion_tokens 1024 --temperature 0.7
+python lmstudio_baseline.py --data_path "F:/GithubRepos/repo-development/Logic-LLM/data" --save_path "F:/GithubRepos/repo-development/Logic-LLM/reasoning_enhanced/results"
+
+Processing example 10/300 - ID: logical_deduction_9
+Generating response (this may take a while)...
+Time taken: 106.4s
+Predicted: None | Actual: A | ✗
+Confidence: low
+
+Reasoning steps:
+1. Facts: The books are arranged in a fixed order: brown, orange, red, purple, and black....
+2. Analysis: From the given information, we know that:
+- The purple book is to the left of the black book.
+- The ...
+3. Deduction: Given that the purple book is to the left of the black book, and the black book is the third from th...
+4. Conclusion: Therefore, the only option that could potentially be true is A) The brown book is the second from th...
 
 # Logic-LM
 Data and Codes for ["LOGIC-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning"](https://arxiv.org/abs/2305.12295) (Findings of EMNLP 2023). 
