@@ -70,7 +70,7 @@ nvidia-cusparse-cu11==11.7.4.91
 nvidia-nccl-cu11==2022.5.19
 nvidia-nvtx-cu11==11.7.91
 ogb==1.3.6
-openai==0.27.9
+openai==0.28.0
 outdated==0.2.2
 packaging==23.1
 pandas==2.1.0
