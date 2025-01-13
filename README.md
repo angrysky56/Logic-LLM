@@ -1,6 +1,5 @@
 ## Modified to work with LM Studio on Windows using python 3.10 by angrysky56 if missing deps just pip install the missing ones.
-
-bash 
+ 
 ```
 cd ./reasoning_enhanced
 python lmstudio_baseline.py --data_path "F:/GithubRepos/repo-development/Logic-LLM/data" --save_path "F:/GithubRepos/repo-development/Logic-LLM/
